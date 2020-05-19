@@ -9,6 +9,8 @@ public class ChessMain
 
         ChessBoard cb = new ChessBoard();
         cb.initializeBoard();
+        cb.initializePieces();
+        cb.placePawns();
         panel.showMessageDialog(null, cb);
         
     }

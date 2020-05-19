@@ -22,4 +22,24 @@ public class ChessBoard
 
     }
 
+    public void initializePieces()
+    {
+        // 16 pawns are added to the chessPieces ArrayList, for 8 pawns on each side of the board
+        for (int piece = 0; piece < BOARD_SIZE * 2; piece++)
+            chessPieces.add(new Pawn());
+
+    }
+
+    public String toString()
+    {
+        String result = "";
+        for (int i = 0; i < BOARD_SIZE; i++)
+        {
+            for (int j = 0; j < BOARD_SIZE; j++)
+                result += chessBoard[i][j] + "      ";
+            result += "\n";
+        }
+
+        return result;
+    }
 }
