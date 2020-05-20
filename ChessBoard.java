@@ -28,6 +28,27 @@ public class ChessBoard
         for (int piece = 0; piece < BOARD_SIZE * 2; piece++)
             chessPieces.add(new Pawn());
 
+        // 4 Rooks are added to the chessPieces ArrayList, for 2 Rooks on each side of the board
+        for (int piece = 0; piece < BOARD_SIZE / 2; piece++)
+            chessPieces.add(new Rook());
+
+        // 4 Knights are added to the chessPieces ArrayList, for 2 Knights on each side of the board
+        for (int piece = 0; piece < BOARD_SIZE / 2; piece++)
+            chessPieces.add(new Knight());
+
+        // 4 Bishops are added to the chessPieces ArrayList, for 2 Bishops on each side of the board
+        for (int piece = 0; piece < BOARD_SIZE / 2; piece++)
+            chessPieces.add(new Bishop());       
+
+        // 2 Queens are added to the chessPieces ArrayList, for 1 Queen on each side of the board
+        for (int piece = 0; piece < 2; piece++)
+            chessPieces.add(new Queen());
+        
+        // 2 Kings are added to the chessPieces ArrayList, for 1 King on each side of the board
+        for (int piece = 0; piece < 2; piece++)
+            chessPieces.add(new King());
+
+    }
     }
 
     public String toString()
