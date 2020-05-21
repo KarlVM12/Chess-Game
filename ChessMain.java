@@ -12,6 +12,11 @@ public class ChessMain
         cb.initializePieces();
         cb.placePawns();
         panel.showMessageDialog(null, cb);
+        cb.placeRooks();
+        cb.placeKnights();
+        cb.placeBishops();
+        cb.placeQueens();
+        cb.placeKings();
         
     }
 }
